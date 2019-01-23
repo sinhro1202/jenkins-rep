@@ -20,6 +20,10 @@ pipeline {
             steps {
                 sh 'ssh root@postgres \'uptime\''
             }
+            stage("third step") {
+            steps {
+                sh 'ssh root@postgres \'date\''
+            }
         }
     }
 }
